@@ -1,20 +1,25 @@
 <?php
-function comparar()
-{
-    $a = 25;
-    $b = 20;
-    if ($a > $b)
-        echo "$a es mayor que $b";
-    else
-        echo "$a no es mayor que $b";
-}
-print comparar();
-
-function multiplicar()
-{
-    $c = 12;
-    $d = 20;
-    print "</br>".($c*$d);
-}
-print multiplicar();
-?>
+    $a = 15;
+    $b = 3;
+    $operacion = "/";
+    switch ($operacion) {
+        case "+":
+            $resultado = $a + $b;
+            break;
+        case "-":
+            $resultado = $a - $b;
+            break;
+        case "x":
+            $resultado = $a * $b;
+            break;
+        case "/":
+            if ($b != 0) {
+                $resultado = $a / $b;
+            } else {
+                $resultado = "No se puede dividir entre 0";
+            }
+            break;
+        default:
+            $resultado = "Error";
+        }
+        print $resultado;
