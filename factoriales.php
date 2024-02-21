@@ -1,9 +1,14 @@
 <?php
-    $v=10;
-    for ($i=1;$i<=$v;$i-1){
+    $v=11;
+    
+    function factorial($v) {
+        $f=1;
+        for ($i=1;$i<=$v;$i++){
         
-        if (i==1) {
-            break;
-        }
+            $f = $f*$i;
+        };
+        return $f;
     };
-?>
+    
+    $resultado = factorial($v);
+    echo "El factorial de $v es $resultado";
